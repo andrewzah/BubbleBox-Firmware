@@ -12,7 +12,7 @@ XInputBackend::XInputBackend(InputSource **input_sources, size_t input_source_co
     _xinput->begin();
     Serial.begin(115200);
 
-    TinyUSBDevice.setID(0x045E, 0x02A1);
+    TinyUSBDevice.setID(0x045E, 0x028e);
 
     while (!_xinput->ready()) {
         delay(1);
